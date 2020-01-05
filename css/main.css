@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Anchor Styles (for hovering animation) */
 a {
   color: rgba(0, 0, 0, 0.87);
   text-decoration: none;
@@ -14,21 +15,22 @@ a:hover {
 }
 
 .clearfix::after {
+  display: table;
   content: "";
   clear: both;
-  display: table;
 }
 
+/* Both Header and Footer navs follow the same styling */
 .nav-items-left {
-  float: left;
   margin-top: 20px;
   margin-left: 20px;
+  float: left;
 }
 
 .nav-items-right {
-  float: right;
   margin-top: 20px;
   margin-right: 20px;
+  float: right;
 }
 
 .nav-items-left a {
@@ -39,58 +41,59 @@ a:hover {
   margin-right: 10px;
 }
 
+/* Main container for the main elements */
 .container {
-  text-align: center;
   margin-top: 160px;
+  text-align: center;
 }
 
 .nav-btn {
   padding: 6px 13px;
-  background: -webkit-linear-gradient(top, #4387fd, #4683ea);
   color: white;
   font-weight: bold;
+  background: -webkit-linear-gradient(top, #4387fd, #4683ea);
   border: 1px solid #4285f4;
   border-radius: 2px;
-  cursor: default;
   text-decoration: none !important;
+  cursor: default;
   opacity: 1 !important;
 }
 
 .search-box {
-  margin-top: 30px;
-  width: 550px;
   padding: 13px;
-  background: transparent;
-  border-radius: 25px;
-  border: 1px solid rgb(228, 224, 224);
+  width: 550px;
+  margin-top: 30px;
   font-size: 16px;
+  background: transparent;
+  border: 1px solid rgb(228, 224, 224);
+  border-radius: 25px;
 }
 
 .search-box:hover {
-  outline: none;
   box-shadow: 0 1px 6px rgb(221, 220, 220);
+  outline: none;
 }
 
 .search-box:focus {
-  outline: none;
   box-shadow: 0 1px 6px rgb(221, 220, 220);
+  outline: none;
 }
 
 .primary-btn {
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
-  border: 1px solid #f2f2f2;
-  color: #5f6368;
-  padding: 9px 16px;
-  border-radius: 4px;
   margin-top: 30px;
   margin-left: 10px;
   font-size: 14px;
+  color: #5f6368;
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+  border: 1px solid #f2f2f2;
+  padding: 9px 16px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .primary-btn:hover {
-  border: 1px solid #bdbebe;
   background-image: -webkit-linear-gradient(top, #f5f5f57c, #f5f5f5);
+  border: 1px solid #bdbebe;
 }
 
 .nav-bottom {
@@ -98,10 +101,10 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 60px;
   font-size: 14px;
+  color: #5f6368;
   background-color: #eeeaea;
   border-top: solid 1px rgb(212, 211, 211);
   opacity: 0.8;
-  color: #5f6368;
-  height: 60px;
 }
